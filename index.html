@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IE to Edge</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Auto Redirect from IE to Edge</h1>
+
+        <p>
+          Technically, the best way to do this is directly through Microsoft.
+          This allows Windows to override normal browser security features to
+          auto-open the Edge browser.
+        </p>
+        <p>
+          You can read more about the process to do so
+          <a
+            href="https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list"
+            target="_blank"
+            rel="noopener noreferrer"
+            >here</a
+          >
+          and find a full list of sites that have integrated this functionality
+          <a
+            href="https://edge.microsoft.com/neededge/v1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >here</a
+          >.
+        </p>
+        <p>
+          This demo contains a script that will automatically trigger in IE, but
+          without the inherent redirect functionality.
+        </p>
+      </div>
+    </section>
+
+    <div id="modal" class="modal-overlay display-none">
+      <div class="modal-container">
+        <div class="modal-content">
+          <h2>
+            The website you were trying to reach doesn't work with Internet
+            Explorer
+          </h2>
+          <p>
+            Click the button below to be automatically redirected to Microsoft
+            Edge. You may also copy the url from the address bar and open this
+            site in the browser of your choice.
+          </p>
+          <p>
+            If you come across a site that needs Internet Explorer, you can load
+            that site in Internet Explorer mode without ever leaving Microsoft
+            Edge.
+          </p>
+          <a
+            href="https://support.microsoft.com/en-us/office/internet-explorer-mode-in-microsoft-edge-6604162f-e38a-48b2-acd2-682dbac6f0de?ui=en-US&rs=en-US&ad=US"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn more about Internet Explorer mode in Microsoft Edge
+          </a>
+          <div class="button-container">
+            <a
+              href="microsoft-edge:http://127.0.0.1:5500/index.html"
+              class="edge-button"
+              id="redirect-to-edge"
+              >Open this site in Microsoft Edge</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/ieToEdge.js"></script>
+  </body>
+</html>

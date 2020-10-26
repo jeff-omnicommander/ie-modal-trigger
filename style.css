@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #0074d9;
+}
+
+a:hover {
+  color: #005197;
+}
+
+a:focus {
+  color: #005197;
+  outline: 1px solid #005197;
+}
+
+section .container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+
+section .container p {
+  line-height: 1.6;
+  width: 70%;
+  margin: 0 auto 1rem;
+}
+
+.modal-overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsla(0, 0%, 87.8%, 0.75);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 60px 48px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -40%);
+  border-radius: 6px;
+  width: 90vw;
+  max-height: 96vh;
+  box-sizing: border-box;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.modal-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.modal-container h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-container p {
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+}
+
+.edge-button {
+  display: inline-block;
+  margin: 4rem 0 2rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #0074d9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.edge-button:hover {
+  background-color: #005197;
+  color: #fff;
+}
+
+.edge-button:focus {
+  outline: 2px solid #005197;
+  background-color: #005197;
+  outline-offset: 6px;
+  color: #fff;
+}
+
+.display-none {
+  display: none;
+}
